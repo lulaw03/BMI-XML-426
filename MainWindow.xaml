@@ -18,7 +18,7 @@
           <StackPanel>
           <Label Foreground="Black" FontSize="15" >身高:</Label>
           <Button Foreground="Black" FontSize="15" Margin="320 0 0 0" x:Name="clear2" Click="clear2_Click">清除</Button>
-            <TextBox Background="Yellow" Foreground="Black" FontSize="15" Margin="0 5 200 5" x:Name="HeightBox" TextChanged="HeightBox_TextChanged" ></TextBox>
+            <TextBox Background="Yellow" Foreground="Black" FontSize="15" Margin="0 5 200 5" x:Name="HeightBox" TextChanged="HeightBox_TextChanged" >0</TextBox>
             <Slider Minimum="0" Maximum="200" ValueChanged="Slider_ValueChanged" TickFrequency ="5" IsSnapToTickEnabled="True" x:Name="HeightSlider"></Slider>
           </StackPanel>
         <StackPanel>
@@ -26,7 +26,7 @@
             <Button Foreground="Black" FontSize="15" Margin="320 0 0 0" x:Name="clear1" Click="clear1_Click">清除</Button>
             </StackPanel>
                 <StackPanel>
-            <TextBox Background="Yellow" Foreground="Black" FontSize="15" Margin="0 5 200 5" x:Name="WeightBox" TextChanged="WeightBox_TextChanged"></TextBox>
+            <TextBox Background="Yellow" Foreground="Black" FontSize="15" Margin="0 5 200 5" x:Name="WeightBox" TextChanged="WeightBox_TextChanged">0</TextBox>
             <Slider Minimum="0" Maximum="200" ValueChanged="WeightSlider_ValueChanged" TickFrequency ="5" IsSnapToTickEnabled="True" x:Name="WeightSlider"></Slider>
             <Button  Foreground="Black" FontSize="15" Margin="320 5 0 5" x:Name="Count" Click="Button_Click_1">計算</Button >
             <TextBlock Foreground="Red" FontSize="25" TextAlignment="Left" x:Name="Consult" >數值為:</TextBlock >
