@@ -70,6 +70,33 @@ namespace WPF419
         private void WeightSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             WeightBox.Text = WeightSlider.Value.ToString();
+
+        }
+
+        private void WeightBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // 宣告身高(cm)和體重(kg)的變數
+            double height = double.Parse(HeightBox.Text) / 100;
+            double weight = double.Parse(WeightBox.Text);
+            height = 0;
+            weight = 0;
+
+            // 計算BMI
+            double BMI = weight / (height * height);
+            Consult.Text = BMI.ToString();
+        }
+
+        private void HeightBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // 宣告身高(cm)和體重(kg)的變數
+            double height = double.Parse(HeightBox.Text) / 100;
+            double weight = double.Parse(WeightBox.Text);
+            height = 0;
+            weight = 0;
+
+            // 計算BMI
+            double BMI = weight / (height * height);
+            Consult.Text = BMI.ToString();
         }
     }
 }
