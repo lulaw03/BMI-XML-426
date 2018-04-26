@@ -1,0 +1,14 @@
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\bin\Debug\WPF419.exe.config
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\bin\Debug\WPF419.exe
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\bin\Debug\WPF419.pdb
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\WPF419.csprojResolveAssemblyReference.cache
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\MainWindow.g.cs
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\App.g.cs
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\WPF419_MarkupCompile.cache
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\WPF419_MarkupCompile.lref
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\MainWindow.baml
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\WPF419.g.resources
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\WPF419.Properties.Resources.resources
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\WPF419.csproj.GenerateResource.Cache
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\WPF419.exe
+C:\Users\w401\Desktop\BMI_WPT-master\WPF419\WPF419\obj\Debug\WPF419.pdb

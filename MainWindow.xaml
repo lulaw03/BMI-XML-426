@@ -5,20 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF419"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="462.313" Width="525">
     <StackPanel Orientation="Vertical">
-        <TextBlock FontSize="25" TextAlignment="Center">你滿十八歲了嗎？</TextBlock >
-              
+        <TextBlock Foreground="BlueViolet" FontSize="25" TextAlignment="Center">你滿十八歲了嗎？</TextBlock >
+
         <StackPanel Orientation="Horizontal">
-            <Button Foreground="Red" FontSize="10" Padding="10 5" Margin="80 5 80 5">Yes</Button>
-            <Button Foreground="Black" FontSize="10" Padding="10 5" Margin="200 5 80 5">No</Button>
-         
+            <Button Foreground="Red" FontSize="10" Padding="10 5" Margin="80 5 80 5" x:Name="Sure" Click="Button_Click_2">Yes</Button>
+            <Button Foreground="Black" FontSize="10" Padding="10 5" Margin="200 5 80 5" Click="Button_Click_3">No</Button>
+
         </StackPanel>
-        <TextBlock Foreground="Black" FontSize="25" Margin="0 5">BMI</TextBlock >
-        <TextBox Foreground="Black" FontSize="15" Padding="10 5">身高:</TextBox>
-        <TextBox Foreground="Black" FontSize="15" Padding="10 5">體重:</TextBox>
-        <Button  Foreground="Black" FontSize="15" Padding="10 5" Margin="200 5" Click="Button_Click_1">計算</Button >
-        <TextBlock Foreground="Red" FontSize="25" TextAlignment="Left" >數值為:</TextBlock >
+          <TextBlock Foreground="RosyBrown" FontSize="25" Margin="230 5">BMI</TextBlock >
+          <StackPanel>
+          <Label Foreground="Black" FontSize="15" >身高:</Label>
+          <Button Foreground="Black" FontSize="15" Margin="320 0 0 0" x:Name="clear2" Click="clear2_Click">清除</Button>
+            <TextBox Background="Yellow" Foreground="Black" FontSize="15" Margin="0 5 200 5" x:Name="HeightBox" ></TextBox>
+            <Slider Minimum="0" Maximum="200" ValueChanged="Slider_ValueChanged" x:Name="HeightSlider"></Slider>
+          </StackPanel>
+        <StackPanel>
+            <Label Foreground="Black" FontSize="15" Margin="0 0 200 0" >體重:</Label>
+            <Button Foreground="Black" FontSize="15" Margin="320 0 0 0" x:Name="clear1" Click="clear1_Click">清除</Button>
+            </StackPanel>
+                <StackPanel>
+            <TextBox Background="Yellow" Foreground="Black" FontSize="15" Margin="0 5 200 5" x:Name="WeightBox"></TextBox>
+            <Slider Minimum="0" Maximum="200" ValueChanged="WeightSlider_ValueChanged" x:Name="WeightSlider"></Slider>
+            <Button  Foreground="Black" FontSize="15" Margin="320 5 0 5" x:Name="Count" Click="Button_Click_1">計算</Button >
+            <TextBlock Foreground="Red" FontSize="25" TextAlignment="Left" x:Name="Consult" >數值為:</TextBlock >
+            </StackPanel>
     </StackPanel>
     
     

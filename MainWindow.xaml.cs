@@ -33,15 +33,43 @@ namespace WPF419
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // 宣告身高(cm)和體重(kg)的變數
-            int height = 158;
-            int weight = 60;
-            int BMI;
+            double height = double.Parse(HeightBox.Text)/100;
+            double weight = double.Parse(WeightBox.Text);
 
             // 計算BMI
-            BMI = weight / (height/100) * (height/100);
+            double BMI = weight / (height * height);
+            Consult.Text = BMI.ToString();
+            
+        }
 
-            // 顯示bmi數值
-            Console.ReadLine();
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("你騙人");
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("請你離開嘿");
+        }
+
+        private void clear2_Click(object sender, RoutedEventArgs e)
+        {
+            HeightBox.Text = " ";
+        }
+
+        private void clear1_Click(object sender, RoutedEventArgs e)
+        {
+            WeightBox.Text = " ";
+        }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            HeightBox.Text = HeightSlider.Value.ToString();
+        }
+
+        private void WeightSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            WeightBox.Text = WeightSlider.Value.ToString();
         }
     }
 }
